@@ -11,7 +11,7 @@ import { NotFoundPage } from './pages/Error';
 function App() {
   return (
     <div className="App">
-      <Router basename="/Homework-05-Image-Zoom-In-Out">
+      <Router basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFoundPage />}></Route>
